@@ -1,0 +1,14 @@
+<div id="test"><h3>Filmid</h3>
+    <div class="grid grid-pad">
+        <div *ngFor="let hero of heroes" (click)="gotoDetail(hero)" class="col-1-4">
+            <div class="module hero">
+                <img src="{{hero.pilt}}" alt="">
+                <h4>{{hero.name}}</h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hero-search></hero-search>
+
+</div>
+
